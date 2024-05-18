@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-inter font-normal text-sm bg-mainBlack text-white
+  }
+
+  #root {
+    @apply flex flex-col w-full min-h-screen
+  }
+}
+
+@layer components {
+  .content-container {
+    @apply w-full max-w-base mx-auto px-4
+  }
+}
