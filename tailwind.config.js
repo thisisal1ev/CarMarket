@@ -14,7 +14,7 @@ export default {
         red: "#E31E36",
       },
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       maxWidth: {
         base: "1440px",

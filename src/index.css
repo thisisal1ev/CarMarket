@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-inter font-normal text-sm bg-mainBlack text-white
+    @apply font-montserrat font-normal text-sm bg-mainBlack text-white
   }
 
   #root {
