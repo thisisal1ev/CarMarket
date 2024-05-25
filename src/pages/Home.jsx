@@ -1,8 +1,13 @@
 import React from 'react'
+import CarsSection from '../components/Cars'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+
+    <CarsSection/>
+
+    </>
   )
 }
 
