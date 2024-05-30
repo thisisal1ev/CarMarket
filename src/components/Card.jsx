@@ -16,15 +16,15 @@ const Card = ({ car }) => {
 
       <CardSwiper carName={car.name} carImg1={car.img1} carImg2={car.img2} carImg3={car.img3} carImg4={car.img4} />
 
-      <div className={`absolute z-1 px-2 rounded-e-md font-medium text-base bg-skyBlueDarker top-5 left-0 ${car.category !== null ? 'block' : 'hidden uppercase'}`}>{car.category !== null ? car.category.toUpperCase() : 'Car no type'}</div>
+      <div className={`absolute z-1 px-3 py-0.5 rounded-e-md font-medium text-base bg-skyBlueDarker top-5 left-0 ${car.category !== null ? 'block' : 'hidden uppercase'}`}>{car.category !== null ? car.category.toUpperCase() : 'Car no type'}</div>
 
-      <button title='Add to favorites' onClick={() => dispatch(toggleFavorites(car))} className='absolute z-1 outline-none top-5 right-5 lg:group-hover:opacity-100 group-focus:fill-red lg:opacity-0 transition-all duration-300'>
-        <svg className={`active:scale-125 lg:hover:scale-125 transition-all duration-300 ${found ? 'fill-red lg:hover:fill-red' : 'fill-current lg:hover:fill-current'}`} width="40" height="30" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+      <button title='Add to favorites' onClick={() => dispatch(toggleFavorites(car))} className='absolute z-1 outline-none top-5 right-5 hover-hover:group-hover:opacity-100 lg:opacity-0 transition-opacity duration-300'>
+        <svg className={`active:scale-150 hover-hover:hover:scale-125 transition-all duration-300 ${found ? 'fill-red hover-hover:hover:fill-red' : 'fill-current hover-hover:hover:fill-current'}`} width="40" height="30" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
           <path d="M12.7882 3.84201C8.55921 -3.4587 0 0.518492 0 8.4714C0 14.4434 11.7342 23.7853 12.7882 25C13.8493 23.7853 25 14.4434 25 8.4714C25 0.578785 17.025 -3.4587 12.7882 3.84201Z" />
         </svg>
       </button>
 
-      <div className='py-5 px-6 flex flex-col grow h-auto'>
+      <div className='p-5 flex flex-col grow h-auto'>
 
         <div className='grow h-auto'>
 
@@ -46,7 +46,7 @@ const Card = ({ car }) => {
 
         </div>
 
-        <Link to='/' className='bg-skyBlueDarker tracking-wider inline-block text-center outline-none relative text-xl leading-6 font-medium w-full rounded-lg py-3 hover:text-mainBlack focus:text-mainBlack before:shadowBtn transition-all duration-300'>
+        <Link to='/' className='mainBtn'>
           Batafsil
         </Link>
 

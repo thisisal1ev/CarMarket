@@ -22,6 +22,9 @@ export default {
       zIndex: {
         1: 1,
       },
+      screens: {
+        "hover-hover": { raw: "(hover: hover)" },
+      },
     },
   },
   plugins: [],

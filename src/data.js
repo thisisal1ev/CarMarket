@@ -9,6 +9,7 @@ import RRlogo from "./assets/icons/Rolls_Royce.svg";
 import porsheLogo from "./assets/icons/porsche.svg";
 import ferrariLogo from "./assets/icons/ferrari.svg";
 import mclarenLogo from "./assets/icons/mclaren.svg";
+import teslaLogo from "./assets/icons/tesla.svg";
 
 //car photos Lamborghini
 import urus from "./assets/img/labborghiniUrus.webp";
@@ -74,7 +75,7 @@ import porscheCayenneSBack from "./assets/img/PorscheCayenneSBack.webp";
 import porscheCayenneSInner from "./assets/img/PorscheCayenneSInner.webp";
 import porscheCayenneSInner2 from "./assets/img/PorscheCayenneSInner2.webp";
 
-//ferrari
+//ferrari-
 import f8 from "./assets/img/FerrariF8Spider.webp";
 import f8Back from "./assets/img/FerrariF8SpiderBack.webp";
 import f8Inner from "./assets/img/FerrariF8SpiderInner.webp";
@@ -86,13 +87,23 @@ import ferRomaInner2 from "./assets/img/FerrariRomaInner2.webp";
 
 //McLaren
 import mc720S from "./assets/img/McLaren720S.webp";
-import mc720SBack from "./assets/img/McLarenArturaBack.webp";
+import mc720SBack from "./assets/img/McLaren720SBack.webp";
 import mc720SInner from "./assets/img/McLaren720SInner.webp";
 import mc720SInner2 from "./assets/img/McLaren720SInner2.webp";
 import mcArtura from "./assets/img/McLarenArtura.webp";
 import mcArturaBack from "./assets/img/McLarenArturaBack.webp";
 import mcArturaInner from "./assets/img/McLarenArturaInner.webp";
 import mcArturaInner2 from "./assets/img/McLarenArturaInner2.webp";
+
+//Tesla
+import tesla3 from "./assets/img/Tesla3Performance.webp";
+import tesla3Back from "./assets/img/Tesla3PerformanceBack.webp";
+import tesla3Inner from "./assets/img/Tesla3PerformanceInner.webp";
+import tesla3Inner2 from "./assets/img/Tesla3PerformanceInner2.webp";
+import teslaCybertrack from "./assets/img/TeslaCybertruckCyberbeast.webp";
+import teslaCybertrackBack from "./assets/img/TeslaCybertruckCyberbeastBack.webp";
+import teslaCybertrackInner from "./assets/img/TeslaCybertruckCyberbeastInner.webp";
+import teslaCybertrackInner2 from "./assets/img/TeslaCybertruckCyberbeastInner2.webp";
 
 const generateUniqueId = () => uuidv4();
 
@@ -161,7 +172,7 @@ export const Cars = [
   ),
   cars(
     generateUniqueId(),
-    "Lamborghini Huracan EVO spyder",
+    "Lamborghini Huracan EVO",
     "Sport",
     640,
     5.2,
@@ -478,5 +489,45 @@ export const Cars = [
     mcArturaBack,
     mcArturaInner,
     mcArturaInner2
+  ),
+  cars(
+    generateUniqueId(),
+    "Tesla 3 Performance",
+    "Sedan",
+    450,
+    "Electro",
+    3.3,
+    2023,
+    "Oq",
+    250,
+    "537574982",
+    "42490",
+    "Tesla",
+    teslaLogo,
+    null,
+    tesla3,
+    tesla3Back,
+    tesla3Inner,
+    tesla3Inner2
+  ),
+  cars(
+    generateUniqueId(),
+    "Tesla Cybertruck Cyberbeast",
+    "Pikap",
+    845,
+    "Electro",
+    2.7,
+    2024,
+    "Kulrang",
+    210,
+    "1036119161",
+    "81895",
+    "Tesla",
+    teslaLogo,
+    "Yangi",
+    teslaCybertrack,
+    teslaCybertrackBack,
+    teslaCybertrackInner,
+    teslaCybertrackInner2
   ),
 ];

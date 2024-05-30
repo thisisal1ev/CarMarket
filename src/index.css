@@ -18,7 +18,7 @@
   }
 
   .favoritesBtn {
-    @apply inline-block relative border-2 w-10 h-10 border-white rounded-lg before:absolute before:-top-2 before:-right-2 before:rounded-full before:bg-red before:text-white before:w-5 before:h-5 before:flex before:items-center before:justify-center before:text-xs before:font-bold transition-colors duration-300
+    @apply inline-block relative border-2 w-10 h-10 border-white rounded-lg before:absolute before:-top-2 before:-right-2 before:rounded-full before:bg-red before:text-white before:w-5 before:h-5 before:flex before:items-center before:justify-center before:text-xs before:font-semibold transition-colors duration-300
   }
 
   .favoritesBtn::before {
@@ -32,10 +32,14 @@
     -webkit-transform: translate3d(-50%, 0, 0);
     -moz-transform: translate3d(-50%, 0, 0);
 
-    @apply absolute h-5 top-9 left-2/4 -translate-x-2/4 rounded-2xl blur-xl transition-colors duration-300 ease-in-out focus:bg-skyBlue hover:bg-skyBlue
+    @apply absolute h-5 top-9 left-2/4 -translate-x-2/4 rounded-2xl blur-xl transition-colors duration-300 ease-in-out focus:bg-skyBlue hover-hover:hover:bg-skyBlue
   }
 
   .swiper-section {
-    @apply w-1/4 hidden first:rounded-tl-xl first:pl-1 last:pr-1 last:rounded-tr-xl px-0.5 lg:group-hover:flex items-end before:flex before:w-full before:rounded-md before:mb-1 before:h-2 before:bg-white before:hover:bg-skyBlue
+    @apply w-1/4 hidden first:rounded-tl-xl first:pl-1 last:pr-1 last:rounded-tr-xl px-0.5 lg:group-hover:flex items-end before:flex before:w-full before:rounded-md before:mb-1 before:h-2 before:bg-white before:hover-hover:hover:bg-skyBlue
+  }
+
+  .mainBtn {
+    @apply bg-skyBlueDarker tracking-wider inline-block text-center outline-none relative text-xl leading-6 font-medium w-full rounded-lg py-3 hover-hover:hover:text-mainBlack focus:text-mainBlack before:shadowBtn transition-colors duration-300
   }
 }

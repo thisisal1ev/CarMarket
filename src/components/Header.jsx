@@ -12,8 +12,8 @@ const Header = () => {
 
         <div className='flex items-center justify-between space-x-5'>
 
-          <button className='inline-block relative border-2 w-10 h-10 border-white rounded-lg group transition-colors duration-300 hover:bg-white'>
-            <svg className='mx-auto fill-current group-hover:fill-mainBlack' width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+          <button className='inline-block relative border-2 w-10 h-10 border-white rounded-lg group transition-colors duration-300 hover-hover:hover:bg-white'>
+            <svg className='mx-auto fill-current group-hover:hover-hover:fill-mainBlack active:fill-mainBlack' width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
               <g clipPath="url(#clip0_37_17)">
                 <path d="M11.7253 0.898132C5.76536 0.898132 0.9104 5.75309 0.9104 11.7131C0.9104 17.6731 5.76536 22.5375 11.7253 22.5375C14.271 22.5375 16.6124 21.6454 18.4627 20.1641L22.9676 24.6666C23.1949 24.8845 23.4985 25.0048 23.8134 25.0015C24.1283 24.9984 24.4295 24.872 24.6523 24.6494C24.8752 24.4269 25.002 24.1261 25.0056 23.8111C25.0093 23.4962 24.8895 23.1924 24.6719 22.9648L20.167 18.4599C21.6495 16.6067 22.5427 14.2617 22.5427 11.7131C22.5427 5.75309 17.6853 0.898132 11.7253 0.898132ZM11.7253 3.30201C16.3862 3.30201 20.1365 7.05226 20.1365 11.7131C20.1365 16.3739 16.3862 20.1336 11.7253 20.1336C7.0645 20.1336 3.31425 16.3739 3.31425 11.7131C3.31425 7.05226 7.0645 3.30201 11.7253 3.30201Z" />
               </g>
@@ -25,8 +25,8 @@ const Header = () => {
             </svg>
           </button>
 
-          <button className='favoritesBtn active:bg-white lg:hover:bg-white group' datacount={datacount}>
-            <svg className='mx-auto fill-current active:fill-mainBlack lg:group-hover:fill-mainBlack transition-colors duration-300' width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+          <button className='favoritesBtn hover-hover:hover:bg-white group' datacount={datacount}>
+            <svg className='mx-auto fill-current group-hover:hover-hover:fill-mainBlack active:fill-mainBlack transition-colors duration-300' width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
               <path d="M12.7882 3.84201C8.55921 -3.4587 0 0.518492 0 8.4714C0 14.4434 11.7342 23.7853 12.7882 25C13.8493 23.7853 25 14.4434 25 8.4714C25 0.578785 17.025 -3.4587 12.7882 3.84201Z" />
             </svg>
           </button>
