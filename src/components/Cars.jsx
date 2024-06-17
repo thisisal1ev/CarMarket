@@ -20,7 +20,7 @@ const CarsSection = () => {
 
       <div className='flex justify-center ml-0 sm:ml-3 sm:block'>
 
-        <Link className='mainBtn px-28 w-auto'>
+        <Link className='mainBtn px-16 sm:px-28 w-auto'>
           Barcha avtomobillar
         </Link>
 

@@ -38,7 +38,7 @@ import amgg63Inner from "./assets/img/MercedesG63AMGBlackMatteInner.webp";
 import amgg63Inner2 from "./assets/img/MercedesG63AMGBlackMatteInner2.webp";
 import maybachS680 from "./assets/img/MercedesMaybachS680.webp";
 import maybachS680Back from "./assets/img/MercedesMaybachS680Back.webp";
-import maybachS680Inner from "./assets/img/RRGhostMansoryInner.webp";
+import maybachS680Inner from "./assets/img/MercedesMaybachS680Inner.webp";
 import maybachS680Inner2 from "./assets/img/MercedesMaybachS680Inner2.webp";
 
 //bmw
