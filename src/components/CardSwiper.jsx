@@ -13,12 +13,11 @@ const SwiperComponent = ({ carName, carImg1, carImg2, carImg3, carImg4 }) => {
   const [currentImage, setCurrentImage] = useState(defaultImage);
 
   return (
-    <div className="flex">
+    <div className="flex card-images">
 
-      <div className="flex w-full h-52 sm:h-[255px] z-1 group">
+      <div className="flex w-full h-52 sm:h-[255px] z-1">
         {images.map((image, index) => (
           <div
-            title={carName}
             key={index}
             className="swiper-section"
             onMouseEnter={() => setCurrentImage(image)}

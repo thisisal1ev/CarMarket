@@ -7,6 +7,7 @@ import MainLayout from "./layouts/MainLayout"
 //pages
 import Home from "./pages/Home"
 import PageNotFound from "./pages/PageNotFound"
+import Feedback from './pages/Feedback';
 
 const App = () => {
   const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const App = () => {
           path: "/",
           element: <Home />,
         },
+        {
+          path: "/feedback",
+          element: <Feedback />,
+        }
       ]
     },
   ]);

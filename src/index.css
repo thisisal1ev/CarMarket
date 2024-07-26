@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
+    scrollbar-gutter: stable;
     @apply font-montserrat font-normal text-sm bg-mainBlack text-white
   }
 
-  #root {
+  #root>div {
     @apply flex flex-col w-full min-h-screen
   }
 }
@@ -35,11 +38,46 @@
     @apply absolute h-5 top-9 left-2/4 -translate-x-2/4 rounded-2xl blur-xl transition-colors duration-300 ease-in-out focus:bg-skyBlue hover-hover:hover:bg-skyBlue
   }
 
+  .card-images:hover .swiper-section {
+    @apply hover-hover:flex
+  }
+
   .swiper-section {
-    @apply w-1/4 hidden first:rounded-tl-xl first:pl-1 last:pr-1 last:rounded-tr-xl px-0.5 hover-hover:group-hover:flex items-end before:w-full before:rounded-md before:mb-1 before:h-2 before:bg-white before:hover-hover:hover:bg-skyBlue
+    @apply w-1/4 hidden first:rounded-tl-xl first:pl-1 last:pr-1 last:rounded-tr-xl px-0.5 items-end before:w-full before:rounded-md before:mb-1 before:h-2 before:bg-white before:hover-hover:hover:bg-skyBlue
   }
 
   .mainBtn {
     @apply bg-skyBlueDarker tracking-wider inline-block text-center outline-none relative text-xl leading-6 font-medium w-full rounded-lg py-3 hover-hover:hover:text-mainBlack focus:text-mainBlack before:shadowBtn transition-colors duration-300
+  }
+
+  .menu-btn {
+    transform: translate(50%, -50%);
+    transition: all .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    @apply inline-block w-3 h-1 cursor-pointer bg-white
+  }
+
+  .menu-btn:before,
+  .menu-btn:after {
+    content: '';
+    transition: all .5s;
+    @apply absolute inline-block w-5 h-1 right-0 bg-white
+  }
+
+  .menu-btn.open {
+    transform: rotate(135deg);
+    @apply absolute top-2/4 left-1/4
+  }
+
+  .menu-btn.open:before,
+  .menu-btn.open:after {
+    @apply top-0 bg-skyBlue
+  }
+
+  .menu-btn.open:after {
+    @apply w-5 rotate-90
+  }
+
+  .hover-effect {
+    @apply absolute left-2/4 -translate-x-2/4 top-full w-0 h-0.5 bg-skyBlue hover:w-full transition-all
   }
 }

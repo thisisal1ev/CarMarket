@@ -1,8 +1,13 @@
 import React from 'react'
 
+
 const Footer = () => {
   return (
-    <footer>Footer</footer>
+    <footer className='content-container'>
+
+      Footer
+
+    </footer>
   )
 }
 
