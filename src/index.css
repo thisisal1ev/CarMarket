@@ -5,79 +5,79 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    scrollbar-gutter: stable;
-    @apply font-montserrat font-normal text-sm bg-mainBlack text-white
-  }
+	body {
+		scrollbar-gutter: stable;
+		@apply font-montserrat font-normal text-sm bg-mainBlack text-white;
+	}
 
-  #root>div {
-    @apply flex flex-col w-full min-h-screen
-  }
+	#root > div {
+		@apply flex flex-col w-full min-h-screen;
+	}
 }
 
 @layer components {
-  .content-container {
-    @apply w-full max-w-base mx-auto px-4
-  }
+	.content-container {
+		@apply w-full max-w-base mx-auto px-5;
+	}
 
-  .favoritesBtn {
-    @apply inline-block relative border-2 w-10 h-10 border-white rounded-lg before:absolute before:-top-2 before:-right-2 before:rounded-full before:bg-red before:text-white before:w-5 before:h-5 before:flex before:items-center before:justify-center before:text-xs before:font-semibold transition-colors duration-300
-  }
+	.favoritesBtn {
+		@apply inline-block relative border-2 w-10 h-10 border-white rounded-lg before:absolute before:-top-2 before:-right-2 before:rounded-full before:bg-red before:text-white before:w-5 before:h-5 before:flex before:items-center before:justify-center before:text-xs before:font-semibold transition-colors duration-300;
+	}
 
-  .favoritesBtn::before {
-    content: attr(datacount);
-  }
+	.favoritesBtn::before {
+		content: attr(datacount);
+	}
 
-  .shadowBtn {
-    width: calc(100% - 60px);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-transform: translate3d(-50%, 0, 0);
-    -moz-transform: translate3d(-50%, 0, 0);
+	.shadowBtn {
+		width: calc(100% - 60px);
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-webkit-transform: translate3d(-50%, 0, 0);
+		-moz-transform: translate3d(-50%, 0, 0);
 
-    @apply absolute h-5 top-9 left-2/4 -translate-x-2/4 rounded-2xl blur-xl transition-colors duration-300 ease-in-out focus:bg-skyBlue hover-hover:hover:bg-skyBlue
-  }
+		@apply absolute h-5 top-9 left-2/4 -translate-x-2/4 rounded-2xl blur-xl transition-colors duration-300 ease-in-out focus:bg-skyBlue hover-hover:hover:bg-skyBlue;
+	}
 
-  .card-images:hover .swiper-section {
-    @apply hover-hover:flex
-  }
+	.card-images:hover .swiper-section {
+		@apply hover-hover:flex;
+	}
 
-  .swiper-section {
-    @apply w-1/4 hidden first:rounded-tl-xl first:pl-1 last:pr-1 last:rounded-tr-xl px-0.5 items-end before:w-full before:rounded-md before:mb-1 before:h-2 before:bg-white before:hover-hover:hover:bg-skyBlue
-  }
+	.swiper-section {
+		@apply w-1/4 hidden first:rounded-tl-xl first:pl-1 last:pr-1 last:rounded-tr-xl px-0.5 items-end before:w-full before:rounded-md before:mb-1 before:h-2 before:bg-white before:hover-hover:hover:bg-skyBlue;
+	}
 
-  .mainBtn {
-    @apply bg-skyBlueDarker tracking-wider inline-block text-center outline-none relative text-xl leading-6 font-medium w-full rounded-lg py-3 hover-hover:hover:text-mainBlack focus:text-mainBlack before:shadowBtn transition-colors duration-300
-  }
+	.mainBtn {
+		@apply bg-skyBlueDarker tracking-wider inline-block text-center outline-none relative text-xl leading-6 font-medium rounded-lg py-3 hover-hover:hover:text-mainBlack focus:text-mainBlack before:shadowBtn transition-colors duration-300;
+	}
 
-  .menu-btn {
-    transform: translate(50%, -50%);
-    transition: all .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-    @apply inline-block w-3 h-1 cursor-pointer bg-white
-  }
+	.menu-btn {
+		transform: translate(50%, -50%);
+		transition: all 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+		@apply inline-block w-3 h-1 cursor-pointer bg-white;
+	}
 
-  .menu-btn:before,
-  .menu-btn:after {
-    content: '';
-    transition: all .5s;
-    @apply absolute inline-block w-5 h-1 right-0 bg-white
-  }
+	.menu-btn:before,
+	.menu-btn:after {
+		content: '';
+		transition: all 0.5s;
+		@apply absolute inline-block w-5 h-1 right-0 bg-white;
+	}
 
-  .menu-btn.open {
-    transform: rotate(135deg);
-    @apply absolute top-2/4 left-1/4
-  }
+	.menu-btn.open {
+		transform: rotate(135deg);
+		@apply absolute top-2/4 left-1/4;
+	}
 
-  .menu-btn.open:before,
-  .menu-btn.open:after {
-    @apply top-0 bg-skyBlue
-  }
+	.menu-btn.open:before,
+	.menu-btn.open:after {
+		@apply top-0 bg-skyBlue;
+	}
 
-  .menu-btn.open:after {
-    @apply w-5 rotate-90
-  }
+	.menu-btn.open:after {
+		@apply w-5 rotate-90;
+	}
 
-  .hover-effect {
-    @apply absolute left-2/4 -translate-x-2/4 top-full w-0 h-0.5 bg-skyBlue hover:w-full transition-all
-  }
+	.hover-effect {
+		@apply absolute left-2/4 -translate-x-2/4 top-full w-0 h-0.5 bg-skyBlue hover:w-full transition-all;
+	}
 }

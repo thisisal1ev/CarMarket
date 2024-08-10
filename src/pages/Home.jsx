@@ -1,14 +1,15 @@
 import React from 'react'
 import CarsSection from '../components/Cars'
+import Hero from '../components/Hero'
 
 const Home = () => {
-  return (
-    <>
+	return (
+		<>
+			<Hero />
 
-    <CarsSection/>
-
-    </>
-  )
+			<CarsSection />
+		</>
+	)
 }
 
 export default Home

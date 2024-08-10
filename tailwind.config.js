@@ -22,13 +22,16 @@ export default {
 				montserrat: ['Montserrat', 'sans-serif'],
 			},
 			maxWidth: {
-				base: '1440px',
+				base: '1480px',
 			},
 			zIndex: {
 				1: 1,
 			},
 			screens: {
 				'hover-hover': { raw: '(hover: hover)' },
+			},
+			backgroundImage: {
+				hero: "url('./src/assets/img/hero-img.png')",
 			},
 		},
 	},

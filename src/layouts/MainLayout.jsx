@@ -1,25 +1,25 @@
 import React from 'react'
-import { Outlet, useLocation } from "react-router-dom"
+import { Outlet, useLocation } from 'react-router-dom'
 
 //components
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 
 const MainLayout = () => {
-  const location = useLocation();
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
+	const location = useLocation()
+	React.useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [location.pathname])
 
-  return (
-    <>
-      <Header />
-      <main className="grow content-container">
-        <Outlet />
-      </main>
-      <Footer />
-    </>
-  )
+	return (
+		<>
+			<Header />
+			<main className='grow'>
+				<Outlet />
+			</main>
+			<Footer />
+		</>
+	)
 }
 
 export default MainLayout
